@@ -1,0 +1,148 @@
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #34495e;
+    --accent-color: #3498db;
+    --bg-color: #478cd1;
+    --text-color: #333333;
+    --border-color: #dee2e6;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+.test-container {
+    max-width: 850px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    border-top: 5px solid var(--primary-color);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+h1 {
+    color: var(--primary-color);
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.description {
+    color: #666;
+    font-size: 15px;
+}
+
+.question-block {
+    margin-bottom: 25px;
+    padding: 20px;
+    background-color: #fbfbfc;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+}
+
+.question-text {
+    font-weight: 600;
+    color: var(--secondary-color);
+    margin-bottom: 15px;
+}
+
+.scale-options {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.scale-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    font-size: 14px;
+    color: #555;
+}
+
+.scale-option input {
+    margin-bottom: 8px;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.btn-submit, .btn-secondary {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-submit {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.btn-submit:hover:not(:disabled) {
+    background-color: var(--secondary-color);
+}
+
+/* Estilo para cuando el botón está bloqueado */
+.btn-submit:disabled {
+    background-color: #bdc3c7;
+    color: #7f8c8d;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+.btn-secondary {
+    background-color: #e0e0e0;
+    color: #333;
+    margin-top: 20px;
+}
+
+.btn-secondary:hover {
+    background-color: #cccccc;
+}
+
+.hidden {
+    display: none;
+}
+
+#results-section {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 2px dashed var(--border-color);
+}
+
+.result-card {
+    background: #fff;
+    border-left: 4px solid var(--accent-color);
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.result-title {
+    color: var(--primary-color);
+    margin: 0 0 5px 0;
+    font-size: 18px;
+}
+
+.result-score {
+    font-weight: bold;
+    color: var(--accent-color);
+}

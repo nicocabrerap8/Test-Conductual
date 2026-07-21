@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuestionario de Patrones Conductuales</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+<body>
+    <div class="test-container">
+        <header>
+            <h1>Cuestionario de Evaluación Conductual</h1>
+            <p class="description">
+                Este instrumento evalúa la frecuencia de emisión de conductas observables en su entorno diario. 
+                Por favor, indique su nivel de acuerdo con las siguientes afirmaciones (1 = Totalmente en desacuerdo, 5 = Totalmente de acuerdo).
+            </p>
+        </header>
+
+        <form id="behavioral-test">
+            <div id="questions-wrapper">
+                <!-- Las preguntas se inyectarán aquí mediante JavaScript -->
+            </div>
+            
+            <div class="action-buttons">
+                <button type="submit" id="btn-submit" class="btn-submit" disabled>Procesar Resultados</button>
+            </div>
+        </form>
+
+        <div id="results-section" class="hidden">
+            <h2>Informe de Resultados</h2>
+            <div id="results-content"></div>
+            <button id="btn-restart" class="btn-secondary">Realizar nuevamente</button>
+        </div>
+    </div>
+
+    <script src="test.js"></script>
+</body>
+</html>
